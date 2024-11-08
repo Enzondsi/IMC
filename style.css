@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+box-sizing: border-box;
+margin: 0;
+
+}
+body{
+    background-color: black;
+ }
+   
+.abc{
+   color: white;
+   display:flex;
+   flex-direction: column;
+   margin: 10%;
+
+ }
+header{
+box-shadow: 3px 3px 3px 3px white;
+color: rgb(255, 255, 255);
+padding: 50px;
+font-size: 1.9em;
+}
+label{
+   font-size: x-large;
+}
+input{
+  font-size: x-large;
+  margin-right: 90%;
+}
+button{
+    margin-right: 90%;
+    padding: 10px;
+}
+p{
+    font-size: 1.9em;
+}
+.texto{
+    color: white;
+    text-align: center;
+    margin: 10%;
+}

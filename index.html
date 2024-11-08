@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal</title> <link rel="stylesheet" href="style.css">
+</head>
+<header>Inocente Nutri 
+<div class="nav">
+<nav>
+    <ul><li ><a href="#IMC">Indicie de Massa Corporal</a></li>
+    <li> <a href="#1">O que é IMC?</a></li>
+
+    
+    </ul>
+</nav>
+
+</div>
+
+</header>
+
+
+
+<body>
+<div class="texto">
+<h1>o Que é IMC ?</h1>
+<p>O Índice de Massa Corporal (IMC) é uma fórmula que permite avaliar se uma pessoa está dentro de um peso saudável em relação à sua altura. Para calcular o IMC, divide-se o peso da pessoa (em quilogramas) pela altura (em metros) elevada ao quadrado. O resultado obtido indica a classificação do peso, que pode variar entre abaixo do peso, peso normal, sobrepeso e obesidade. 
+
+    O IMC é uma ferramenta comum utilizada por profissionais de saúde para identificar possíveis riscos relacionados à saúde, como diabetes, doenças cardiovasculares e problemas articulares. No entanto, vale ressaltar que o IMC não considera outros fatores como a composição corporal, a distribuição de gordura e a musculatura, sendo apenas um indicador que deve ser complementado com outras avaliações para uma análise mais completa da saúde de um indivíduo.</p>
+</div>
+
+
+
+
+
+
+
+
+    <div class="abc">
+        <h1>Índice de Massa Corporal</h1>
+
+    <label for="Altura">Altura (em metros):</label>
+    <input type="number" name="Altura" id="Altura" step="0.01" required>
+
+    <label for="peso">Peso (KG):</label>
+    <input type="number" name="peso" id="peso" required>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p>Seu índice de massa corporal é: <span id="Resultado"></span></p>
+</div>
+
+
+
+    <script>
+        function calcularIMC() {
+            const altura = parseFloat(document.getElementById("Altura").value);
+            const peso = parseFloat(document.getElementById("peso").value);
+            const resultado = peso / (altura ** 2);
+
+            document.getElementById("Resultado").textContent = resultado.toFixed(2);
+        }
+    </script>
+</body>
+</html>
